@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_output_pdf_page_size_title">Pdf Page Size</string>
+    <string name="pref_output_pdf_page_size_a4_entry">A4</string>
+    <string name="pref_output_pdf_page_size_letter_entry">Letter</string>
+
+    <string name="remote_backups_list_no_backups">You don\'t have any backups yet</string>
+</resources>

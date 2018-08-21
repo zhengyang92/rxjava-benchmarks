@@ -1,0 +1,46 @@
+language: android
+jdk: oraclejdk8
+sudo: required # See https://github.com/travis-ci/travis-ci/issues/5582
+android:
+  components:
+  - tools
+  - tools
+  - platform-tools
+  - build-tools-27.0.3
+  - android-26
+
+  # Additional components
+  - addon-google_apis-google-27
+  - extra-google-google_play_services
+  - extra-android-support
+  - extra-google-m2repository
+  - extra-android-m2repository
+  licenses:
+  - 'android-sdk-preview-license-52d11cd2'
+  - 'android-sdk-license-.+'
+  - 'google-gdk-license-.+'
+notifications:
+  email:
+    recipients:
+      - support@smartreceipts.co
+    on_success: never # default: change
+    on_failure: always # default: always
+before_install:
+- openssl aes-256-cbc -K $encrypted_f86bd80ecf4c_key -iv $encrypted_f86bd80ecf4c_iv -in secrets.tar.enc -out secrets.tar -d
+- tar xvf secrets.tar
+- mkdir "$ANDROID_HOME/licenses" || true
+- echo -e "\n8933bad161af4178b1185d1a37fbf41ea5269c55" > "$ANDROID_HOME/licenses/android-sdk-license"
+- echo -e "\n84831b9409646a918e30573bab4c9c91346d8abd" > "$ANDROID_HOME/licenses/android-sdk-preview-license"
+- chmod +x gradlew
+script:
+- "./gradlew clean test"
+after_failure:
+- echo "Build FAILED"
+
+# tests
+- cat app/build/reports/tests/testFreeDebugUnitTest/index.html
+- cat app/build/reports/tests/testPlusFlavorDebugUnitTest/index.html
+
+# app
+- cat app/build/reports/lint-results.xml
+- cat app/build/reports/lint-results.html

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background_base">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tabs_line"/>
+
+    <RelativeLayout
+        android:id="@+id/tabs_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:elevation="1dp">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="56dp"
+            android:background="@android:color/transparent"
+            android:clipToPadding="true"
+            app:layout_collapseMode="pin"
+            app:tabGravity="center"
+            app:tabIndicatorColor="?attr/colorAccent"
+            app:tabPaddingEnd="16dp"
+            app:tabPaddingStart="16dp"
+            app:tabSelectedTextColor="?attr/colorAccent"
+            app:tabTextColor="?attr/second_text_color"/>
+
+        <android.support.v7.widget.AppCompatImageButton
+            android:id="@+id/delete_button"
+            android:layout_width="56dp"
+            android:layout_height="@dimen/dp48"
+            android:layout_alignParentEnd="true"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:srcCompat="@drawable/ic_toolbar_backspace" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

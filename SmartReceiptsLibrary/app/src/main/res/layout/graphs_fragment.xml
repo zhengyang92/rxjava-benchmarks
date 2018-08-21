@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/empty_text"
+        style="@style/Widget.SmartReceipts.TextView.NoData"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:text="@string/graphs_no_data"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ProgressBar style="@style/Widget.SmartReceipts.ProgressBar.Loading"
+        android:id="@+id/progress"
+        android:layout_gravity="center" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadeScrollbars="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/graphs_linear_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/dates_line_chart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/graph_height_default"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <com.github.mikephil.charting.charts.PieChart
+                android:id="@+id/categories_pie_chart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/graph_height_default"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <com.github.mikephil.charting.charts.HorizontalBarChart
+                android:id="@+id/reimbursable_horizontal_bar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/graph_height_small"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/payment_methods_bar_chart"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/graph_height_small"
+                android:layout_marginBottom="@dimen/margin_normal"
+                android:layout_marginTop="@dimen/margin_normal"
+                android:visibility="gone"
+                tools:visibility="visible" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!--
+        Coordinator, потому-что он уходит под статусбар, а допусть FrameLayout не уходит.
+    -->
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/fragments_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <!--
+            Эта вьюха нужна, чтобы фрагменты нормально вставлялись.
+            Если её не будет, то нулевой фрагмент не уйдёт под статусбар, а другие будут норм.
+            А с этой вьюхой получается, что она не уходит под сб, а фрагменты уходят.
+        -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true" />
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <!--
+        Для измерения размеров статусбара и навбара.
+        От версии андроида эта хрень работает по-разному. Но в целом вроде норм.
+    -->
+    <View
+        android:id="@+id/view_for_measure"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/menu_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="?attr/background_for_lists"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:id="@+id/menu_drawer_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/drawer_header_layout" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?attr/divider_line" />
+            <TextView
+                android:id="@+id/forbidden_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp16"
+                android:textColor="@color/md_red_500"
+                android:text="Уведомления не работают, отключите VPN/Proxy"
+                android:visibility="gone"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/menu_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingTop="@dimen/dp8" />
+        </LinearLayout>
+    </android.support.design.widget.NavigationView>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/tab_drawer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:background="?attr/background_for_lists"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:id="@+id/tab_drawer_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/tab_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/tab_close_all" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/tab_close_all"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="start|center_vertical"
+                android:text="@string/close_other_tabs" />
+        </RelativeLayout>
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

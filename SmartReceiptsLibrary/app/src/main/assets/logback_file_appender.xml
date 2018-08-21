@@ -1,0 +1,17 @@
+<included>
+
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${DATA_DIR}/log.txt</file>
+        <encoder>
+            <pattern>[%date] &lt;%logger{20}&gt; %level: %msg%n</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
+            <maxIndex>1</maxIndex>
+            <FileNamePattern>${DATA_DIR}/log%i.txt</FileNamePattern>
+        </rollingPolicy>
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <MaxFileSize>1MB</MaxFileSize>
+        </triggeringPolicy>
+    </appender>
+
+</included>

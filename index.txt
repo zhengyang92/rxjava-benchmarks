@@ -1,0 +1,8 @@
+https://github.com/RadiationX/ForPDA,ForPDA
+https://github.com/chat-sdk/chat-sdk-android,chat-sdk-android
+https://github.com/TrustWallet/trust-wallet-android-source,trust-wallet-android
+https://github.com/riggaroo/android-arch-components-date-countdown,arch-components-date
+https://github.com/JessYanCoding/MVPArms,MVPArms
+https://github.com/kuwork/rxbus,rxbus
+https://github.com/wbaumann/SmartReceiptsLibrary,SmartReceiptsLibrary
+https://github.com/openfoodfacts/openfoodfacts-androidapp,OpenFoodFacts

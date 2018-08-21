@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/generate_report_tooltip"
+        style="@style/Widget.SmartReceipts.Button.Secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/generate_report_tooltip" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/generate_report_tooltip"
+        android:orientation="vertical"
+        android:padding="@dimen/generate_report_padding">
+
+        <CheckBox
+            android:id="@+id/dialog_email_checkbox_pdf_full"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/generate_report_item_separation"
+            android:paddingEnd="@dimen/generate_report_item_separation"
+            android:paddingStart="@dimen/generate_report_item_separation"
+            android:text="@string/DIALOG_EMAIL_CHECKBOX_PDF_FULL"
+            android:textAppearance="@style/Widget.SmartReceipts.TextView.Title" />
+
+        <CheckBox
+            android:id="@+id/dialog_email_checkbox_pdf_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/generate_report_item_separation"
+            android:paddingEnd="@dimen/generate_report_item_separation"
+            android:paddingStart="@dimen/generate_report_item_separation"
+            android:text="@string/DIALOG_EMAIL_CHECKBOX_PDF_IMAGES"
+            android:textAppearance="@style/Widget.SmartReceipts.TextView.Title" />
+
+        <CheckBox
+            android:id="@+id/dialog_email_checkbox_csv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/generate_report_item_separation"
+            android:paddingEnd="@dimen/generate_report_item_separation"
+            android:paddingStart="@dimen/generate_report_item_separation"
+            android:text="@string/DIALOG_EMAIL_CHECKBOX_CSV"
+            android:textAppearance="@style/Widget.SmartReceipts.TextView.Title" />
+
+        <CheckBox
+            android:id="@+id/dialog_email_checkbox_zip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/generate_report_item_separation"
+            android:paddingStart="@dimen/generate_report_item_separation"
+            android:layout_marginBottom="@dimen/generate_report_item_separation"
+            android:text="@string/DIALOG_EMAIL_CHECKBOX_ZIP"
+            android:textAppearance="@style/Widget.SmartReceipts.TextView.Title" />
+
+        <CheckBox
+            android:id="@+id/dialog_email_checkbox_zip_with_metadata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="@dimen/generate_report_item_separation"
+            android:paddingStart="@dimen/generate_report_item_separation"
+            android:layout_marginBottom="@dimen/generate_report_item_separation"
+            android:text="@string/DIALOG_EMAIL_CHECKBOX_ZIP_WITH_METADATA"
+            android:textAppearance="@style/Widget.SmartReceipts.TextView.Title" />
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/receipt_action_send"
+        style="@style/Widget.SmartReceipts.FloatingActionButton"
+        android:src="@drawable/ic_action_send" />
+</RelativeLayout>

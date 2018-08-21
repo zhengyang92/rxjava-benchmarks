@@ -1,0 +1,47 @@
+################
+## Project Obfuscation
+################
+ads.xml
+analytics.xml
+secrets.xml
+
+#################
+## Android Studio
+#################
+*.iml
+.idea/
+.gradle/
+build/
+
+smartReceiptsLibrary/*.pdf
+
+
+#################
+## Eclipse
+#################
+
+*.pydevproject
+.project
+.metadata
+bin/
+gen/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath

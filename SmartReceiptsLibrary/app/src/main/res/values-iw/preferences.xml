@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ============== Preference Headers ================= -->
+    <string name="pref_general_header">כללי</string>
+    <string name="pref_receipt_header">חשבוניות</string>
+    <string name="pref_output_header">דוח מיוצא</string>
+    <string name="pref_email_header">אימייל</string>
+    <string name="pref_camera_header">מלצמה</string>
+    <string name="pref_layout_header">התאמה אישית (עיצוב)</string>
+    <string name="pref_distance_header">מרחק</string>
+    <string name="pref_pro_header">Smart Receipts Plus</string>
+    <string name="pref_help_header">תמיכה</string>
+    <string name="pref_about_header">אודות</string>
+    <string name="pref_privacy_header">פרטיות</string>
+
+    <!-- ============== Preference General ================= -->
+    <string name="pref_general_trip_duration_title">אורך נסיעה ממוצע</string>
+    <string name="pref_general_default_currency_title">מטבע ברירת מחדל</string>
+    <string name="pref_general_default_date_separator_title">מפריד תאריך ברירת מחדל</string>
+    <string name="pref_general_track_cost_center_title">חשב מרכז עלויות</string>
+    <string name="pref_general_track_cost_center_summaryOn">הכלל מרכז עלויות בדיווחים</string>
+    <string name="pref_general_track_cost_center_summaryOff">אל תכליל מרכז עלויות בדיווחים</string>
+
+    <!-- ============== Preference Receipt ================= -->
+    <string name="pref_receipt_customize_categories_title">התאמה אישית לקטגוריות</string>
+    <string name="pref_receipt_customize_categories_summary">לחץ כאן לשינוי/הוספת קטגוריה</string>
+    <string name="pref_receipt_predict_categories_title">חיזוי קטגוריות</string>
+    <string name="pref_receipt_predict_categories_summary">מלא קטגוריה באופן אוטומטי לפי מידע קודם</string>
+    <string name="pref_receipt_match_name_to_category_title">התאם שם לקטגוריה</string>
+    <string name="pref_receipt_match_name_to_category_summary">התאם שם לקטגוריה באופן אוטומטי</string>
+    <string name="pref_receipt_match_comment_to_category_title">התאם הערה לקטגוריה</string>
+    <string name="pref_receipt_match_comment_to_category_summary">התאם הערה לקטגוריה באופן אוטומטי</string>
+    <string name="pref_receipt_reimbursable_only_title">דווח רק על קבלות ברות-החזר</string>
+    <string name="pref_receipt_reimbursable_only_summary">הסר קבלות אחרות מהדוח</string>
+    <string name="pref_receipt_reimbursable_default_title">קבלות מסומנות כברות-החזר כברירת מחדל</string>
+    <string name="pref_receipt_include_tax_field_title">הוסף שדה מס</string>
+    <string name="pref_receipt_include_tax_field_summary">מוסיף שורה עבור מיסים</string>
+    <string name="pref_receipt_tax_percent_title">אחוז מס ברירת-מחדל</string>
+    <string name="pref_receipt_pre_tax_title">הנח שמחיר הוא לפני מס</string>
+    <string name="pref_receipt_pre_tax_summary_on">מחשב מס ממחיר טרום ניכוי מס</string>
+    <string name="pref_receipt_pre_tax_summary_off">מחשב מס ממחיר לאחר ניכוי מס</string>
+    <string name="pref_receipt_enable_autocomplete_title">אפשר הצעות אוטומטיות להשלמה</string>
+    <string name="pref_receipt_enable_autocomplete_summary">מציע ערכים אפשריים מערכים קודמים</string>
+    <string name="pref_receipt_minimum_receipts_price_title">מחיר קבלה מינימלי</string>
+    <string name="pref_receipt_minimum_receipts_price_summary_all">הכלל את כל הקבלות בדוח</string>
+    <string name="pref_receipt_minimum_receipts_price_summary_partial">%s דווח רק על קבלות מעל</string>
+    <string name="pref_receipt_default_to_report_start_date_title">קבע את תאריך תחילת הדוח כברירת מחדל</string>
+    <string name="pref_receipt_default_to_report_start_date_summary">קובע את תאריך הקבלה לתאריך תחילת הדוח</string>
+    <string name="pref_receipt_show_id_title">הראה מזהה קבלה</string>
+    <string name="pref_receipt_show_id_summary">מראה מזהה לכל קבלה (מספר המוקצה אוטומטית)</string>
+    <string name="pref_receipt_full_page_title">הנח דף מלא</string>
+    <string name="pref_receipt_full_page_summary">מסמן קבלות כדף מלא כברירת מחדל</string>
+    <string name="pref_receipt_use_payment_methods_title">אפשר אמצעי תשלום</string>
+    <string name="pref_receipt_use_payment_methods_summary">סמן על מנת לעקוב אחרי אמצעי תשלום לקבלות</string>
+    <string name="pref_receipt_payment_methods_title">התאמה אישית לאמצעי תשלום</string>
+    <string name="pref_receipt_payment_methods_summary">לחץ כאן להוספה/שינוי אמצעי תשלום</string>
+
+    <!-- ============= Preference Output ================= -->
+    <string name="pref_output_custom_csv_title">התאמה אישית לדוח אקסל</string>
+    <string name="pref_output_custom_pdf_title">התאמה אישית לדוח פידיאף</string>
+    <string name="pref_output_username_title">מזהה משתמש</string>
+    <string name="pref_output_username_emptyValue">משמש כשדה ייצוא בהתאמה אישית</string>
+    <string name="pref_output_print_receipt_id_by_photo_title">הראה מזהה לפי תמונה</string>
+    <string name="pref_output_print_receipt_id_by_photo_summary">מראה את מזהה את קבלה במקום מספר אינדקס</string>
+    <string name="pref_output_print_receipt_comment_by_photo_title">הראה הערה לקבלה לפי תמונה</string>
+    <string name="pref_output_print_receipt_comment_by_photo_summaryOn">מראה הערה לקבלה מעל תמונות פידיאף</string>
+    <string name="pref_output_print_receipt_comment_by_photo_summaryOff">מחביא הערה לקבלה מתחת לתמונות פידיאף</string>
+    <string name="pref_output_receipts_landscape_title">מדפיס טבלת קבלות בדף מאוזן</string>
+    <string name="pref_output_receipts_landscape_on">טבלת קבלות מודפסת בדף מאוזן</string>
+    <string name="pref_output_receipts_landscape_off">טבלת קבלות מודפסת בדף מאונך</string>
+    <string-array name="pref_output_pdf_page_size_value_entryValues">
+        <item>@string/pref_output_pdf_page_size_a4_entryValue</item>
+        <item>@string/pref_output_pdf_page_size_letter_entryValue</item>
+    </string-array>
+    <string-array name="pref_output_pdf_page_size_value_entries">
+        <item>@string/pref_output_pdf_page_size_a4_entry</item>
+        <item>@string/pref_output_pdf_page_size_letter_entry</item>
+    </string-array>
+
+    <!-- ============== Preference Email ================= -->
+    <string name="pref_email_default_email_to_title">כתובת אימייל ברירת מחדל למשלוח הדוח</string>
+    <string name="pref_email_default_email_cc_title">כתובת אימייל ברירת מחדל למשלוח העתק של הדוח</string>
+    <string name="pref_email_default_email_bcc_title">כתובת אימייל בריבת מחדל למשלוח העתק מוסתר של הדוח</string>
+    <string name="pref_email_default_email_emptyValue">(;) הפרד ערכים עם פסיקודה</string>
+    <string name="pref_email_default_email_subject_title">כותרת אימייל ברירת מחדל</string>
+
+    <!-- ============= Preference Camera ================= -->
+    <string name="pref_camera_bw_title">המר לגווני אפור</string>
+    <string name="pref_camera_bw_summary">שומר תמונה בשחור ולבן</string>
+    <string name="pref_camera_rotate_title">סובב תמונות באופן אוטומטי</string>
+    <string name="pref_camera_rotate_summaryOn">נסה לסובב את התמונה לכיוון הנכון</string>
+    <string name="pref_camera_rotate_summaryOff">אל תסובב תמונות</string>
+
+    <!-- ============= Preference Layout ================= -->
+    <string name="pref_layout_display_date_title">כלול תאריך קבלה</string>
+    <string name="pref_layout_display_date_summary">מראה תאריך לכל קבלה ברשימת הקבלות</string>
+    <string name="pref_layout_display_category_title">הכלל קטגוריית קבלה</string>
+    <string name="pref_layout_display_category_summary">מראה קטגוריה לכל קבלה ברשימת הקבלות</string>
+
+    <!-- ============= Preference Distance ================= -->
+    <string name="pref_distance_include_price_in_report_title">הוסף מחיר נסיעה לדוח</string>
+    <string name="pref_distance_include_price_in_report_summaryOn">מוסיף מחיר נסיעה לסכימה בדוח</string>
+    <string name="pref_distance_include_price_in_report_summaryOff">לא מוסיף מחיר נסיעה לסכימה בדוח</string>
+    <string name="pref_distance_rate_title">מחיר לדלק</string>
+    <string name="pref_distance_rate_summaryOff">מחיר לפי קילומטר או מייל של נסיעה</string>
+    <string name="pref_distance_rate_summaryOn">לכל מייל או קילומטר %s</string>
+    <string name="pref_distance_print_table_title">הוסף טבלת מרחק נסיעה</string>
+    <string name="pref_distance_print_table_summaryOn">דוחות פידיאף ואקסל כוללים טבלת מרחק נסיעה</string>
+    <string name="pref_distance_print_table_summaryOff">דוחות פידיאף ואקסל לא כוללים טבלת מרחק נסיעה</string>
+    <string name="pref_distance_print_daily_title">דווח על מרחק נסיעה יומי</string>
+    <string name="pref_distance_print_daily_summaryOn">הראה מרחק נסיעה לכל קבלה</string>
+    <string name="pref_distance_print_daily_summaryOff">אל תראה מרחק נסיעה לכל קבלה</string>
+    <string name="pref_distance_as_price_title">מחיר מרחק נסיעה בכותרת משנה</string>
+    <string name="pref_distance_as_price_summaryOn">הראה סך הכול מחיר נסיעה בכותרת משנה</string>
+    <string name="pref_distance_as_price_summaryOff">הראה סך הכול מרחק נסיעה בכותרת משנה</string>
+
+    <!-- ================= Preference Plus ================== -->
+    <string name="pref_pro_pdf_footer_title">טקסט בתחתית מסמך פידיאף</string>
+    <string name="pref_pro_separate_by_category_title">הפרד תשלומים לפי קטגוריה</string>
+    <string name="pref_pro_separate_by_category_summaryOn">דוחות פידיאף ואקסל מכילים טבלאות שונות לפי קטגוריה</string>
+    <string name="pref_pro_separate_by_category_summaryOff">דוחות פידיאף ואקסל לא מכילים טבלאות שונות לפי קטגוריה</string>
+    <string name="pref_pro_categorical_summation_title">כלול סכימה לפי קטגרויה</string>
+    <string name="pref_pro_categorical_summation_summaryOn">דוחות פידיאף ואקסל מכילים טבלאות של סכימה לפי קטגוריה</string>
+    <string name="pref_pro_categorical_summation_summaryOff">דוחות פידיאף ואקסל לא מכילים טבלאות של סכימה לפי קטגוריה</string>
+    <string name="pref_pro_omit_default_table_title">אל תכלול טבלת פידיאף ברירת מחדל</string>
+
+    <!-- ============== Preference Support ================= -->
+    <string name="pref_help_send_love_title">(:שלח אהבה</string>
+    <string name="pref_help_send_feedback_title">שלח פידבק</string>
+    <string name="pref_help_support_email_title">שלח אימייל לתמיכה טכנית</string>
+
+    <!-- =============== Preference About ================== -->
+    <string name="pref_about_version_title">גרסא</string>
+    <string name="pref_about_about_title">אודות</string>
+    <string name="pref_about_terms_title">תנאי שימוש</string>
+
+    <!-- ============== Preference Privacy ================= -->
+    <string name="pref_about_privacy_policy_title">מדיניות פרטיות</string>
+    <string name="pref_privacy_enable_analytics_title">שתף מידע אנונימי אודות השימוש שלך</string>
+    <string name="pref_privacy_enable_analytics_summary">Google/Firebase Analytics באמצעות</string>
+    <string name="pref_privacy_enable_crash_tracking_title">שתף מידע על התרסקות התוכנה</string>
+    <string name="pref_privacy_enable_crash_tracking_summary">Google Crashlyticsבאמצעות </string>
+    <string name="pref_privacy_enable_ad_personalization_title">אפשר התאמה אישית של פרסומות</string>
+    <string name="pref_privacy_enable_ad_personalization_summary">Google AdMobעם </string>
+
+    <!-- =============== Preference Misc =================== -->
+
+</resources>

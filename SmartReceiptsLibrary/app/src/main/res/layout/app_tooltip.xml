@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:background="@color/smart_receipts_colorAccent" >
+
+
+    <ImageView
+        android:id="@+id/tooltip_error_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/default_tooltip_horizontal_padding"
+        android:tint="@color/text_primary_color"
+        android:visibility="gone"
+        app:srcCompat="@drawable/ic_error_outline_24dp"
+        tools:visibility="gone" />
+
+
+    <TextView
+        android:id="@+id/tooltip_message"
+        style="@style/Widget.SmartReceipts.TextView.Button.Secondary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/tooltip_error_icon"
+        android:layout_toStartOf="@id/part_end"
+        android:ellipsize="end"
+        android:paddingBottom="@dimen/default_tooltip_vertical_padding"
+        android:paddingEnd="@dimen/default_tooltip_horizontal_padding"
+        android:paddingStart="@dimen/default_tooltip_horizontal_padding"
+        android:paddingTop="@dimen/default_tooltip_vertical_padding"
+        android:visibility="gone"
+        tools:text="Tooltip Message"
+        tools:visibility="visible" />
+
+
+    <LinearLayout
+        android:id="@+id/part_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tooltip_no"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/tooltip_yes"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yes"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/tooltip_cancel"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DIALOG_CANCEL"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/tooltip_close_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="@dimen/default_tooltip_horizontal_padding"
+            android:tint="@color/text_primary_color"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_clear_24dp"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+
+</RelativeLayout>
